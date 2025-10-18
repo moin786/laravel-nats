@@ -38,10 +38,8 @@ class NatsManager implements NatsClientInterface
 
     public function publish(string $subject, $payload, array $headers = []): void
     {
-        if (!empty($headers)) {
-            $payload = new Payload('tester', [
-                'Nats-Msg-Id' => 'payload-example'
-            ]);
+        if (!$payload instanceof Payload) {
+            $payload = new Payload(is_array($payload) ? json_encode($payload) : (string) $payload);
         }
 
         $this->client->publish($subject, $payload);
