@@ -7,13 +7,13 @@ Laravel integration for [`basis-company/nats`](https://github.com/basis-company/
 1. Require package (after publishing to Packagist or using local path):
 
 ```bash
-composer require your-vendor/laravel-nats
+composer require PealIhertz/laravel-nats
 ```
 
 2. Publish config (optional):
 
 ```bash
-php artisan vendor:publish --provider="YourVendor\\LaravelNats\\NatsServiceProvider" --tag=config
+php artisan vendor:publish --provider="PealIhertz\\LaravelNats\\NatsServiceProvider" --tag=config
 ```
 
 3. Update your `.env` file:
@@ -55,6 +55,7 @@ composer install
 ---
 
 ## Features
+
 - Publish / Subscribe / Request / Response
 - Artisan consumer command
 - Configurable TLS support
