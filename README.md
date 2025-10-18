@@ -24,13 +24,7 @@ With this package, you can:
 ## ⚙️ Installation
 
 ```bash
-composer require PealIhertz/laravel-nats
-```
-
-Or if you’re developing locally:
-
-```bash
-composer require PealIhertz/laravel-nats
+composer require peal-ihertz/laravel-nats dev-main
 ```
 
 ---
