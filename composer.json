@@ -1,41 +1,37 @@
 {
-    "name": "peal-ihertz/laravel-nats",
-    "description": "Laravel integration for basis-company/nats (NATS JetStream client)",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mohammed Minuddin Peal",
-            "email": "moinuddin7@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0",
-        "basis-company/nats": "^1.0"
-    },
-    "require-dev": {
-        "pestphp/pest": "^3.0",
-        "mockery/mockery": "^1.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "PealIhertz\\LaravelNats\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "PealIhertz\\LaravelNats\\Tests\\": "tests/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "PealIhertz\\LaravelNats\\NatsServiceProvider"
-            ],
-            "aliases": {
-                "Nats": "PealIhertz\\LaravelNats\\Facades\\Nats"
-            }
-        }
+  "name": "peal-ihertz/laravel-nats",
+  "description": "Laravel integration for basis-company/nats (NATS JetStream client)",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammed Minuddin Peal",
+      "email": "moinuddin7@gmail.com"
     }
+  ],
+  "require": {},
+  "require-dev": {
+    "pestphp/pest": "^3.0",
+    "mockery/mockery": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "PealIhertz\\LaravelNats\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PealIhertz\\LaravelNats\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PealIhertz\\LaravelNats\\NatsServiceProvider"
+      ],
+      "aliases": {
+        "Nats": "PealIhertz\\LaravelNats\\Facades\\Nats"
+      }
+    }
+  }
 }
